@@ -1,0 +1,100 @@
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    /* background-color: ; Slightly off-black for depth */
+    color: #e0e0e0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+#solar-system-canvas { 
+    display: block; 
+    width: 100vw;
+    height: 100vh;
+}
+#loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000005;
+    display: flex;
+    flex-direction: column; /* Stack text and spinner */
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #e0e0e0;
+    z-index: 1000; /* Ensure it's on top */
+    transition: opacity 0.5s ease-out;
+}
+/* Simple CSS spinner */
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-left-color: #f0c040;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-top: 20px;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+/* info card  */
+#info-card {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(20, 20, 30, 0.85); /* Darker, slightly blueish transparent background */
+    border: 1px solid #303040;
+    border-radius: 12px; /* Softer corners */
+    padding: 20px;
+    width: 300px; /* Slightly wider */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* More pronounced shadow */
+    display: none; 
+    color: #e0e0e0;
+    font-size: 14px;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth appearance */
+    opacity: 0;
+    transform: translateX(-20px);
+}
+#info-card.visible { 
+    display: block; 
+    opacity: 1;
+    transform: translateX(0);
+}
+#info-card h2 { 
+    margin-top: 0; 
+    margin-bottom: 15px;
+    font-size: 20px; 
+    color: #f0c040; /* Gold color for planet name */
+    border-bottom: 1px solid #404050;
+    padding-bottom: 8px;
+}
+#info-card p { 
+    margin: 8px 0; 
+    line-height: 1.6;
+}
+#info-card strong { 
+    color: #9090a0; /* Lighter gray for labels */
+    min-width: 120px; /* Align values */
+    display: inline-block;
+}
+#close-info-card {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #404050;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+#close-info-card:hover {
+    background: #505060;
+}
