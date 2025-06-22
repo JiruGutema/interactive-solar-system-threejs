@@ -1,0 +1,2 @@
+live demo: https://jirugutema.github.io/interactive-solar-system-threejs
+github: https://github.com/JiruGutema/interactive-solar-system-threejs

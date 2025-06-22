@@ -1,4 +1,49 @@
+# Addis Ababa Institute of Technology  
+School of Information Technology and Engineering  
+Department of IT/SE Eng.  
+Course: Graphics Project Proposal
+
+## Title: Interactive Solar System Simulator with Three.js
+
+### Team Members
+1. Abigiya Daniel &nbsp;&nbsp;&nbsp;&nbsp;UGR/5110/15
+2. Ashenafi Godana &nbsp;&nbsp;&nbsp;&nbsp;UGR/7906/14
+3. Jiru Gutema &nbsp;&nbsp;&nbsp;&nbsp;UGR/5902/15
+4. Blen Debebe &nbsp;&nbsp;&nbsp;&nbsp;UGR/5297/15
+5. Kalafat Tezazu &nbsp;&nbsp;&nbsp;&nbsp;UGR/6048/15
+
+**Submitted to:** Mr. Addisalem G.  
+**Date:** June 22, 2025
+
+---
+
 # Interactive Solar System Three.js - Technical Documentation
+
+# [Live Demo](https://jirugutema.github.io/interactive-solar-system-threejs/)
+
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Installation & Setup](#installation--setup)
+3. [Dependencies](#dependencies)
+4. [Architecture Documentation](#architecture-documentation)
+    - Module Structure  
+      1. main.js  
+      2. data.js  
+      3. scene.js  
+      4. lights.js  
+      5. controls.js  
+      6. bodies.js  
+      7. animation.js  
+      8. interaction.js  
+      9. utils.js  
+5. [API Reference](#api-reference)
+    - Configuration objects  
+    - Key Functions  
+6. [Performance & Optimization](#performance-optimization)
+7. [Troubleshooting](#troubleshooting)
+8. [Extension Guidelines](#extension-guidelines)
+
+---
 
 ## Project Overview
 
@@ -347,5 +392,7 @@ stats.update();
 2. Add corresponding HTML elements
 3. Update interaction handlers in `interaction.js`
 4. Style new elements in `styles.css`
+
+---
 
 This documentation provides the foundation for understanding, maintaining, and extending the Interactive Solar System application. The modular architecture ensures that modifications can be made to individual components without affecting the entire system.
